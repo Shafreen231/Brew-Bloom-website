@@ -24,6 +24,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+document.querySelectorAll('nav ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+    setTimeout(() => {
+      revealSections(); // your function that animates sections
+    }, 100); // wait a tiny bit for scrolling
+  });
+});
+
 // CONTACT FORM SUBMIT
 function submitForm(event) {
   event.preventDefault();
