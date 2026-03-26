@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Brew & Bloom Cafe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo"><span class="brew">Brew</span><span class="bloom"> &amp; Bloom</span></div>
+  <ul id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <h3>Brew & Bloom Cafe</h3>
+      <p>📍 Tirupur, Tamil Nadu</p>
+      <p>📞 +91 9876543210</p>
+      <p>✉ brew&bloom@gmail.com</p>
+      <p>🕒 9:00 AM – 10:00 PM</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="text" placeholder="Phone Number" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<div class="contact-quote">
+  <p>
+    “Every great conversation begins with a simple hello — we’d love to hear from you, 
+    connect with you, and make your next visit even more special.”
+  </p>
+</div>
+
+<div class="back-btn-container">
+  <a href="index.html" class="back-btn">← Back to Home</a>
+</div>
+<footer>
+    <div class="footer-brand">
+      <div class="logo">Brew <span>&amp; Bloom</span></div>
+      <p>A sanctuary for coffee lovers, creators, and dreamers — where every cup tells a story and every visit leaves a memory.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
